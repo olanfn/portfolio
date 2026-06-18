@@ -4,9 +4,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500 dark:text-gray-500">
         <div>
           <span className="font-grotesk font-semibold gradient-text">Rolan Oktafian</span>
-          <span className="ml-2">· IT Support | Web Developer | Full Stack Developer</span>
+          <span className="ml-2">· IT Support | Web Developer | Full Stack Developer | Networking</span>
         </div>
-        <div>© {new Date().getFullYear()} Hak cipta dilindungi.</div>
+        <div>© {new Date().getFullYear()} Copyright, All rights reserved by <span className="font-grotesk font-semibold gradient-text">OlanFN</span>.</div>
       </div>
     </footer>
   )

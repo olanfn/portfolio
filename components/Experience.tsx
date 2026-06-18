@@ -47,7 +47,7 @@ const experiences: ExperienceItem[] = [
     "color": "#00D4FF"
   },
   {
-    "company": "PT. Narumonda",
+    "company": "PT. Narumonda Sitio Tio",
     "role": "IT Staff & Fullstack Developer",
     "period": "2019 – 2021",
     "location": "Surabaya, Indonesia",
@@ -120,9 +120,8 @@ export default function Experience() {
             {experiences.map((exp, i) => (
               <div
                 key={i}
-                className={`reveal relative flex flex-col md:flex-row gap-8 ${
-                  i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className={`reveal relative flex flex-col md:flex-row gap-8 ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
               >
                 {/* Dot */}
                 <div
