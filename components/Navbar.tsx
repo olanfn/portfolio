@@ -8,11 +8,11 @@ export default function Navbar() {
   const [active, setActive] = useState('home')
 
   const navItems = [
-    { label: 'Beranda', href: '#home' },
-    { label: 'Pengalaman', href: '#experience' },
-    { label: 'Proyek', href: '#projects' },
-    { label: 'Tentang', href: '#about' },
-    { label: 'Kontak', href: '#contact' },
+    { label: 'Home', href: '#home' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Project', href: '#projects' },
+    { label: 'About', href: '#about' },
+    { label: 'Contact', href: '#contact' },
   ]
 
   useEffect(() => {
@@ -38,11 +38,10 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-      scrolled
+    <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled
         ? 'bg-white/90 dark:bg-[#0A0A0F]/90 backdrop-blur-md shadow-lg shadow-black/10 dark:shadow-black/30 border-b border-gray-200/50 dark:border-[#2A2A4A]/50'
         : 'bg-transparent'
-    }`}>
+      }`}>
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <button onClick={() => handleNav('#home')} className="font-grotesk font-bold text-xl flex-shrink-0">
@@ -56,11 +55,10 @@ export default function Navbar() {
             <li key={item.href}>
               <button
                 onClick={() => handleNav(item.href)}
-                className={`nav-link font-inter text-sm font-medium transition-colors pb-1 ${
-                  active === item.href.replace('#', '')
+                className={`nav-link font-inter text-sm font-medium transition-colors pb-1 ${active === item.href.replace('#', '')
                     ? 'text-[#6C63FF] dark:text-[#6C63FF]'
                     : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
+                  }`}
               >
                 {item.label}
               </button>
@@ -87,11 +85,10 @@ export default function Navbar() {
             <button
               key={item.href}
               onClick={() => handleNav(item.href)}
-              className={`text-left text-sm font-medium py-2 border-b border-gray-100 dark:border-[#1A1A2E] ${
-                active === item.href.replace('#', '')
+              className={`text-left text-sm font-medium py-2 border-b border-gray-100 dark:border-[#1A1A2E] ${active === item.href.replace('#', '')
                   ? 'text-[#6C63FF]'
                   : 'text-gray-700 dark:text-gray-300'
-              }`}
+                }`}
             >
               {item.label}
             </button>
