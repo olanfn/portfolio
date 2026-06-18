@@ -33,7 +33,7 @@ export default function Contact() {
     // Send via mailto
     const subject = encodeURIComponent(form.subject || 'Pesan dari Portfolio')
     const body = encodeURIComponent(`Nama: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)
-    window.location.href = `mailto:rolan.oktafian@email.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:rolanoktafian@email.com?subject=${subject}&body=${body}`
     setSent(true)
     setTimeout(() => setSent(false), 3000)
   }
@@ -49,7 +49,7 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="reveal mb-16 text-center">
-          <span className="text-[#00D4FF] text-sm font-semibold uppercase tracking-widest">Hubungi Saya</span>
+          <span className="text-[#00D4FF] text-sm font-semibold uppercase tracking-widest">Contact Me</span>
           <h2 className="font-grotesk font-bold text-3xl sm:text-4xl text-gray-900 dark:text-white mt-2">Let's Connect</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#6C63FF] to-[#00D4FF] rounded-full mx-auto mt-4" />
           <p className="text-gray-500 dark:text-gray-400 mt-4 max-w-md mx-auto text-sm">
@@ -61,7 +61,7 @@ export default function Contact() {
           {/* Info */}
           <div className="lg:col-span-2 space-y-6">
             {[
-              { icon: <Mail size={18} />, label: 'Email', value: 'rolan.oktafian@email.com', href: 'mailto:rolan.oktafian@email.com' },
+              { icon: <Mail size={18} />, label: 'Email', value: 'rolanoktafian@email.com', href: 'mailto:rolanoktafian@email.com' },
               { icon: <Phone size={18} />, label: 'WhatsApp', value: '+62 851-8229-7311', href: 'https://wa.me/6285182297311' },
               { icon: <MapPin size={18} />, label: 'Lokasi', value: 'Jakarta, Indonesia', href: null },
             ].map((info) => (
