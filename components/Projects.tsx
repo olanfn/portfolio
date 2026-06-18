@@ -31,7 +31,7 @@ const projects: ProjectItem[] = [
   {
     "title": "Axie Infinity Game NFT Monitoring System",
     "category": "Web App",
-    "description": "Dashboard monitoring game Axie Infinity untuk kebutuhan manajemen aset game NFT dan melacak performa game.",
+    "description": "Monitoring dashboard for Axie Infinity game for NFT game asset management and tracking game performance.",
     "tech": ["Codeigniter", "MySQL", "Ranking point system", "Axie Infinity API"],
     "github": "https://github.com/olanfn",
     "demo": null,
@@ -53,7 +53,7 @@ const projects: ProjectItem[] = [
   {
     "title": "Company Profile Website",
     "category": "Web App",
-    "description": "Website company profile modern dengan animasi scroll, galeri portofolio, dan formulir kontak yang terhubung ke email perusahaan.",
+    "description": "Modern company profile website with scrolling animation, portfolio gallery, and contact form linked to company email.",
     "tech": ["WordPress", "PHP", "Custom Plugin"],
     "github": "https://github.com/olanfn",
     "demo": "https://demo.example.com",
@@ -64,9 +64,9 @@ const projects: ProjectItem[] = [
   {
     "title": "Inventory Management",
     "category": "Full Stack",
-    "description": "Aplikasi manajemen inventori dengan barcode scanner, laporan stok real-time, dan integrasi dengan sistem POS.",
+    "description": "Inventory management application with barcode scanner, real-time stock reports, and integration with POS systems.",
     "tech": ["React", "Node.js", "PostgreSQL", "Redis"],
-    "github": "https://github.com/rolanok",
+    "github": "https://github.com/olanfn",
     "demo": "https://demo.example.com",
     "gradient": "from-violet-500 to-purple-700",
     "icon": "📦",
@@ -75,9 +75,9 @@ const projects: ProjectItem[] = [
   {
     "title": "Network Monitor Dashboard",
     "category": "IT Tools",
-    "description": "Dashboard monitoring jaringan real-time untuk memantau bandwidth, latency, uptime server, dan mengirim alert otomatis.",
+    "description": "Real-time network monitoring dashboard to monitor bandwidth, latency, server uptime, and send automatic alerts.",
     "tech": ["Python", "Flask", "React", "InfluxDB", "Grafana"],
-    "github": "https://github.com/rolanok",
+    "github": "https://github.com/olanfn",
     "demo": null,
     "gradient": "from-red-500 to-orange-600",
     "icon": "📡",
@@ -117,9 +117,9 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="reveal mb-16 text-center">
-          <span className="text-[#00D4FF] text-sm font-semibold uppercase tracking-widest">Portofolio</span>
+          <span className="text-[#00D4FF] text-sm font-semibold uppercase tracking-widest">Project</span>
           <h2 className="font-grotesk font-bold text-3xl sm:text-4xl text-gray-900 dark:text-white mt-2">
-            Project yang Pernah Dibuat
+            Project I've Made
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#00D4FF] to-[#6C63FF] rounded-full mx-auto mt-4" />
         </div>
@@ -152,7 +152,7 @@ export default function Projects() {
                 </span>
                 {project.featured && (
                   <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1 border border-white/20">
-                    <span className="text-yellow-300">★</span> Unggulan
+                    <span className="text-yellow-300">★</span> Featured
                   </div>
                 )}
               </div>
@@ -186,7 +186,7 @@ export default function Projects() {
                     className="flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                   >
                     <Github size={16} />
-                    Kode
+                    Source Code
                   </a>
                   {project.demo && (
                     <a
@@ -195,7 +195,7 @@ export default function Projects() {
                       className="flex items-center gap-1.5 text-sm font-medium text-[#00D4FF] hover:text-[#00B4D8] transition-colors ml-auto"
                     >
                       <Globe size={16} />
-                      Demo Langsung
+                      Live Demo
                     </a>
                   )}
                 </div>

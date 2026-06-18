@@ -49,7 +49,7 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="reveal mb-16 text-center">
-          <span className="text-[#00D4FF] text-sm font-semibold uppercase tracking-widest">Contact Me</span>
+          <span className="text-[#00D4FF] text-sm font-semibold uppercase tracking-widest">Contact</span>
           <h2 className="font-grotesk font-bold text-3xl sm:text-4xl text-gray-900 dark:text-white mt-2">Let's Connect</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#6C63FF] to-[#00D4FF] rounded-full mx-auto mt-4" />
           <p className="text-gray-500 dark:text-gray-400 mt-4 max-w-md mx-auto text-sm">

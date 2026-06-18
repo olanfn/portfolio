@@ -106,7 +106,7 @@ export default function Experience() {
         <div className="reveal mb-16 text-center">
           <span className="text-[#6C63FF] text-sm font-semibold uppercase tracking-widest">Experience</span>
           <h2 className="font-grotesk font-bold text-3xl sm:text-4xl text-gray-900 dark:text-white mt-2">
-            Experience
+            My Experiences
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#6C63FF] to-[#00D4FF] rounded-full mx-auto mt-4" />
         </div>
