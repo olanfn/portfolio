@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 import { Download, MessageCircle, ChevronDown } from 'lucide-react'
-import Image from 'next/image';
+import Image from "next/image";
 
 const roles = [
   'IT Support',
