@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 import { Download, MessageCircle, ChevronDown } from 'lucide-react'
+import Image from 'next/image';
 
 const roles = [
   'IT Support',
@@ -175,15 +176,15 @@ export default function Hero() {
           <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-3xl relative animate-float">
             {/* Decorative border */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#6C63FF] to-[#00D4FF] p-0.5">
-              <div className="w-full h-full rounded-3xl bg-gray-100 dark:bg-[#1A1A2E] flex items-center justify-center overflow-hidden">
-                {/* Placeholder avatar - replace with actual photo */}
-                <div className="text-center">
-                  <div className="w-28 h-28 rounded-full bg-gradient-to-br from-[#6C63FF] to-[#00D4FF] mx-auto mb-4 flex items-center justify-center text-4xl font-grotesk font-bold text-white">
-                    RO
-                  </div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm">Your Photo Here</p>
-                  <p className="text-gray-400 dark:text-gray-600 text-xs mt-1">Replace with image tag</p>
-                </div>
+              <div className="w-full h-full rounded-3xl bg-gray-100 dark:bg-[#1A1A2E] flex items-center justify-center overflow-hidden relative group">
+                <Image
+                  src="/photos/pp.jpeg"
+                  alt="Rolan Oktafian"
+                  fill
+                  sizes="(max-width: 768px) 256px, 320px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  priority
+                />
               </div>
             </div>
             {/* Floating badges */}
