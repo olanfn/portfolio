@@ -110,7 +110,7 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-white via-purple-50/30 to-cyan-50/20 dark:from-[#0A0A0F] dark:via-[#0D0D1A] dark:to-[#0A0A0F]" />
-      
+
       {/* Glow blobs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#6C63FF]/10 rounded-full blur-3xl animate-pulse-slow" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#00D4FF]/8 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
@@ -124,11 +124,11 @@ export default function Hero() {
         <div className="flex-1 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#6C63FF]/10 border border-[#6C63FF]/20 text-[#6C63FF] text-sm font-medium mb-6">
             <span className="w-2 h-2 rounded-full bg-[#6C63FF] animate-pulse" />
-            Tersedia untuk bekerja
+            Available for work
           </div>
 
           <h1 className="font-grotesk font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight mb-4">
-            <span className="text-gray-900 dark:text-white">Halo, saya </span>
+            <span className="text-gray-900 dark:text-white">Hello, I'm </span>
             <span className="gradient-text">Rolan</span>
             <br />
             <span className="text-gray-900 dark:text-white">Oktafian</span>
@@ -142,7 +142,7 @@ export default function Hero() {
           </div>
 
           <p className="text-gray-600 dark:text-gray-400 text-lg max-w-xl mx-auto lg:mx-0 mb-10 leading-relaxed">
-            Profesional IT dengan pengalaman dalam support teknis, pengembangan web, dan solusi full stack. Berfokus pada membangun sistem yang handal dan pengalaman pengguna yang luar biasa.
+            An IT Professional with experience in technical support, web development, and full-stack solutions. Focused on building reliable systems and exceptional user experiences.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -154,7 +154,7 @@ export default function Hero() {
                 hover:shadow-lg hover:shadow-[#6C63FF]/30 hover:-translate-y-1 transition-all duration-200 glow"
             >
               <Download size={18} />
-              Unduh CV
+              Download CV
             </a>
             <a
               href="https://wa.me/6285182297311"
@@ -165,7 +165,7 @@ export default function Hero() {
                 hover:shadow-lg hover:shadow-[#25D366]/30 hover:-translate-y-1 transition-all duration-200"
             >
               <MessageCircle size={18} />
-              WhatsApp Saya
+              WhatsApp
             </a>
           </div>
         </div>
@@ -181,8 +181,8 @@ export default function Hero() {
                   <div className="w-28 h-28 rounded-full bg-gradient-to-br from-[#6C63FF] to-[#00D4FF] mx-auto mb-4 flex items-center justify-center text-4xl font-grotesk font-bold text-white">
                     RO
                   </div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm">Foto Anda di sini</p>
-                  <p className="text-gray-400 dark:text-gray-600 text-xs mt-1">Ganti dengan tag gambar</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm">Your Photo Here</p>
+                  <p className="text-gray-400 dark:text-gray-600 text-xs mt-1">Replace with image tag</p>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@ export default function Hero() {
         onClick={scrollDown}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400 dark:text-gray-600 hover:text-[#6C63FF] transition-colors"
       >
-        <span className="text-xs font-medium">Gulir</span>
+        <span className="text-xs font-medium">Scroll</span>
         <ChevronDown size={20} className="animate-bounce" />
       </button>
     </section>

@@ -39,7 +39,7 @@ export default function Contact() {
   }
 
   const handleWhatsApp = () => {
-    const defaultBody = 'Halo Rolan! Saya [nama Anda] ingin menghubungi Anda.'.replace('[nama Anda]', form.name || '[nama Anda]')
+    const defaultBody = 'Hi Rolan! I\'m [nama Anda] want to contact you.'.replace('[nama Anda]', form.name || '[nama Anda]')
     const msg = encodeURIComponent(`${defaultBody}${form.message ? '\n\n' + form.message : ''}`)
     window.open(`https://wa.me/6285182297311?text=${msg}`, '_blank')
   }
@@ -53,7 +53,7 @@ export default function Contact() {
           <h2 className="font-grotesk font-bold text-3xl sm:text-4xl text-gray-900 dark:text-white mt-2">Let's Connect</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#6C63FF] to-[#00D4FF] rounded-full mx-auto mt-4" />
           <p className="text-gray-500 dark:text-gray-400 mt-4 max-w-md mx-auto text-sm">
-            Punya project atau pertanyaan? Saya siap membantu. Kirim pesan atau hubungi langsung via WhatsApp.
+            Have a project or questions? I'm ready to help. Send a message or contact me directly via WhatsApp.
           </p>
         </div>
 
@@ -63,7 +63,7 @@ export default function Contact() {
             {[
               { icon: <Mail size={18} />, label: 'Email', value: 'rolanoktafian@email.com', href: 'mailto:rolanoktafian@email.com' },
               { icon: <Phone size={18} />, label: 'WhatsApp', value: '+62 851-8229-7311', href: 'https://wa.me/6285182297311' },
-              { icon: <MapPin size={18} />, label: 'Lokasi', value: 'Jakarta, Indonesia', href: null },
+              { icon: <MapPin size={18} />, label: 'Location', value: 'Jakarta, Indonesia', href: null },
             ].map((info) => (
               <div key={info.label} className="reveal">
                 {info.href ? (
@@ -106,7 +106,7 @@ export default function Contact() {
                   hover:shadow-lg hover:shadow-[#25D366]/25 hover:-translate-y-1 transition-all duration-200"
               >
                 <MessageCircle size={18} />
-                Chat di WhatsApp
+                Chat on WhatsApp
               </a>
             </div>
           </div>
@@ -114,17 +114,17 @@ export default function Contact() {
           {/* Form */}
           <div className="lg:col-span-3 reveal">
             <div className="bg-gray-50 dark:bg-[#1A1A2E] rounded-2xl p-8 border border-gray-200 dark:border-[#2A2A4A]">
-              <h3 className="font-grotesk font-bold text-lg text-gray-900 dark:text-white mb-6">Kirim Pesan</h3>
+              <h3 className="font-grotesk font-bold text-lg text-gray-900 dark:text-white mb-6">Send Message</h3>
 
               <div className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1.5">Nama Lengkap</label>
+                    <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1.5">Full Name</label>
                     <input
                       name="name"
                       value={form.name}
                       onChange={handleChange}
-                      placeholder="Nama Anda"
+                      placeholder="Full Name"
                       className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0A0A0F] border border-gray-200 dark:border-[#2A2A4A] text-gray-900 dark:text-white text-sm placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#6C63FF] transition-colors"
                     />
                   </div>
@@ -135,31 +135,31 @@ export default function Contact() {
                       value={form.email}
                       onChange={handleChange}
                       type="email"
-                      placeholder="email@anda.com"
+                      placeholder="Your Email"
                       className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0A0A0F] border border-gray-200 dark:border-[#2A2A4A] text-gray-900 dark:text-white text-sm placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#6C63FF] transition-colors"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1.5">Subjek</label>
+                  <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1.5">Subject</label>
                   <input
                     name="subject"
                     value={form.subject}
                     onChange={handleChange}
-                    placeholder="Perihal pesan Anda"
+                    placeholder="Subject of your message"
                     className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0A0A0F] border border-gray-200 dark:border-[#2A2A4A] text-gray-900 dark:text-white text-sm placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#6C63FF] transition-colors"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1.5">Pesan</label>
+                  <label className="block text-sm text-gray-600 dark:text-gray-400 mb-1.5">Message</label>
                   <textarea
                     name="message"
                     value={form.message}
                     onChange={handleChange}
                     rows={5}
-                    placeholder="Tulis pesan Anda di sini..."
+                    placeholder="Write your message here..."
                     className="w-full px-4 py-3 rounded-xl bg-white dark:bg-[#0A0A0F] border border-gray-200 dark:border-[#2A2A4A] text-gray-900 dark:text-white text-sm placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#6C63FF] transition-colors resize-none"
                   />
                 </div>
@@ -171,7 +171,7 @@ export default function Contact() {
                       bg-gradient-to-r from-[#6C63FF] to-[#5A52E0] text-white font-semibold text-sm
                       hover:shadow-lg hover:shadow-[#6C63FF]/25 hover:-translate-y-0.5 transition-all duration-200"
                   >
-                    {sent ? <><CheckCircle size={16} /> Terkirim!</> : <><Send size={16} /> Kirim Email</>}
+                    {sent ? <><CheckCircle size={16} /> <span className="sm:block hidden">Sent!</span></> : <><Send size={16} /> Send Email</>}
                   </button>
                   <button
                     onClick={handleWhatsApp}

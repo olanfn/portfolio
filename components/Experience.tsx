@@ -19,12 +19,12 @@ const experiences: ExperienceItem[] = [
     "role": "IT Support & Technical Support",
     "period": "2026",
     "location": "Surabaya, Indonesia",
-    "type": "Penuh waktu",
+    "type": "Full time",
     "description": [
-      "Melakukan instalasi, konfigurasi, dan deployment perangkat IT (PC, laptop, printer, CCTV)",
-      "Menangani troubleshooting hardware & software serta incident user",
-      "Melakukan maintenance rutin untuk meningkatkan stabilitas sistem dan mengurangi gangguan operasional",
-      "Mendokumentasikan aktivitas IT support dan laporan teknis"
+      "Performing IT equipment installation, configuration, and deployment (PC, laptop, printer, CCTV)",
+      "Handling hardware & software troubleshooting and user incidents",
+      "Conducting routine maintenance to improve system stability and reduce operational disruptions",
+      "Documenting IT support activities and technical reports"
     ],
     "skills": ["Hardware", "Networking", "CCTV", "Help Desk", "Troubleshooting"],
     "color": "#6C63FF"
@@ -34,14 +34,14 @@ const experiences: ExperienceItem[] = [
     "role": "IT Staff & Web Developer",
     "period": "2021 – 2023",
     "location": "Surabaya, Indonesia",
-    "type": "Penuh waktu",
+    "type": "Full time",
     "description": [
-      "Memberikan technical support kepada 20+ user terkait perangkat IT.",
-      "Membuat aplikasi internal perusahaan untuk kebutuhan HR Recruitment.",
-      "Melakukan pengembangan untuk website perusahaan terkait optimasi SEO, update konten dan gambar.",
-      "Instalasi dan konfigurasi sistem operasi serta software aplikasi.",
-      "Melakukan preventive maintenance dan perbaikan perangkat.",
-      "Mendukung operasional jaringan LAN/WAN."
+      "Providing technical support to 20+ users for IT equipment",
+      "Developing internal web applications for HR Recruitment needs",
+      "Performing website development for SEO optimization, content and image updates",
+      "Installing and configuring operating systems and application software",
+      "Conducting preventive maintenance and device repair",
+      "Supporting LAN/WAN network operations"
     ],
     "skills": ["Troubleshooting", "WordPress/Shopify", "Laravel", "Hardware", "Help Desk"],
     "color": "#00D4FF"
@@ -51,13 +51,13 @@ const experiences: ExperienceItem[] = [
     "role": "IT Staff & Fullstack Developer",
     "period": "2019 – 2021",
     "location": "Surabaya, Indonesia",
-    "type": "Penuh waktu",
+    "type": "Full time",
     "description": [
-      "Mengembangkan aplikasi internal berbasis web untuk manajemen data karyawan",
-      "Implementasi sistem barcode untuk kebutuhan operasional perusahaan",
-      "Melakukan debugging, testing, dan maintenance aplikasi",
-      "Menangani troubleshooting IT (hardware, software, jaringan)",
-      "Berkoordinasi dengan vendor/ISP untuk setup dan troubleshooting jaringan"
+      "Developing internal web applications for employee data management",
+      "Implementing barcode systems for operational needs",
+      "Performing debugging, testing, and application maintenance",
+      "Handling IT troubleshooting (hardware, software, network)",
+      "Coordinating with vendors/ISPs for network setup and troubleshooting"
     ],
     "skills": ["Troubleshooting", "Hardware", "Fullstack Development", "Software", "Networking", "Help Desk"],
     "color": "#F59E0B"
@@ -69,10 +69,10 @@ const experiences: ExperienceItem[] = [
     "location": "Remote",
     "type": "Freelance",
     "description": [
-      "Membuat website dan aplikasi berbasis PHP & WordPress",
-      "Melakukan optimasi SEO (On-Page & Off-Page) untuk meningkatkan traffic",
-      "Integrasi API untuk kebutuhan sistem monitoring",
-      "Maintenance dan troubleshooting website"
+      "Creating PHP & WordPress-based websites and applications",
+      "Performing SEO optimization (On-Page & Off-Page) to increase traffic",
+      "Integrating APIs for monitoring system needs",
+      "Maintaining and troubleshooting websites"
     ],
     "skills": ["Fullstack Development", "WordPress", "API Integration", "Optimize SEO", "PHP", "JavaScript"],
     "color": "#F59E0B"
@@ -104,9 +104,9 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="reveal mb-16 text-center">
-          <span className="text-[#6C63FF] text-sm font-semibold uppercase tracking-widest">Karir</span>
+          <span className="text-[#6C63FF] text-sm font-semibold uppercase tracking-widest">Experience</span>
           <h2 className="font-grotesk font-bold text-3xl sm:text-4xl text-gray-900 dark:text-white mt-2">
-            Pengalaman Kerja
+            Experience
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#6C63FF] to-[#00D4FF] rounded-full mx-auto mt-4" />
         </div>

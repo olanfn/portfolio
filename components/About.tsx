@@ -3,9 +3,9 @@ import { useEffect, useRef } from 'react'
 
 const skills = {
   'Frontend': ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML/CSS', 'JavaScript'],
-  'Backend': ['Node.js', 'Laravel', 'PHP', 'Python', 'REST API', 'MySQL'],
-  'IT Support': ['Windows Server', 'Active Directory', 'Networking', 'Hardware', 'Help Desk', 'CCTV'],
-  'Tools': ['Git', 'Docker', 'VS Code', 'Figma', 'Postman', 'Linux'],
+  'Backend': ['Node.js', 'Laravel', 'PHP', 'CodeIgniter', 'REST API', 'MySQL'],
+  'IT Support': ['Operating System', 'Active Directory', 'Networking', 'Hardware', 'Help Desk', 'CCTV'],
+  'Tools': ['Git', 'Microsoft 365', 'Visual Studio Code', 'Figma', 'Postman', 'Linux'],
 }
 
 const socials = [
@@ -91,7 +91,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="reveal mb-16 text-center">
-          <span className="text-[#6C63FF] text-sm font-semibold uppercase tracking-widest">Tentang Saya</span>
+          <span className="text-[#6C63FF] text-sm font-semibold uppercase tracking-widest">About</span>
           <h2 className="font-grotesk font-bold text-3xl sm:text-4xl text-gray-900 dark:text-white mt-2">About Me</h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#6C63FF] to-[#00D4FF] rounded-full mx-auto mt-4" />
         </div>
@@ -100,16 +100,16 @@ export default function About() {
           {/* Bio */}
           <div>
             <div className="reveal bg-white dark:bg-[#1A1A2E] rounded-2xl p-8 border border-gray-200 dark:border-[#2A2A4A] mb-6">
-              <h3 className="font-grotesk font-bold text-xl text-gray-900 dark:text-white mb-4">Siapa Saya?</h3>
+              <h3 className="font-grotesk font-bold text-xl text-gray-900 dark:text-white mb-4">Who is Me?</h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                 <p>
-                  Saya adalah <strong className="text-gray-800 dark:text-gray-200">Rolan Oktafian</strong>, seorang profesional IT yang berpengalaman di bidang IT Support, Web Development, dan Full Stack Development.
+                  I'm <strong className="text-gray-800 dark:text-gray-200">Rolan Oktafian</strong>, a professional IT with experience in IT Support, Web Development, and Full Stack Development.
                 </p>
                 <p>
-                  Dengan latar belakang yang kuat di dunia teknis, saya mampu menangani berbagai tantangan mulai dari troubleshooting infrastruktur IT hingga membangun aplikasi web yang scalable dan modern.
+                  With a strong background in the technical world, I am able to handle various challenges ranging from troubleshooting IT infrastructure to building scalable and modern web applications.
                 </p>
                 <p>
-                  Saya percaya bahwa teknologi adalah alat yang kuat untuk memecahkan masalah nyata. Setiap project adalah kesempatan untuk belajar dan memberikan dampak positif.
+                  I believe that technology is a powerful tool to solve real problems. Every project is an opportunity to learn and make a positive impact.
                 </p>
               </div>
             </div>
@@ -117,9 +117,9 @@ export default function About() {
             {/* Stats */}
             <div className="reveal grid grid-cols-3 gap-4">
               {[
-                { value: '5+', label: 'Tahun Pengalaman' },
-                { value: '30+', label: 'Project Selesai' },
-                { value: '30+', label: 'Klien Puas' },
+                { value: '5+', label: 'Years of Experience' },
+                { value: '30+', label: 'Completed Projects' },
+                { value: '30+', label: 'Satisfied Clients' },
               ].map((stat) => (
                 <div key={stat.label} className="bg-white dark:bg-[#1A1A2E] rounded-xl p-4 border border-gray-200 dark:border-[#2A2A4A] text-center">
                   <div className="gradient-text font-grotesk font-bold text-2xl">{stat.value}</div>
@@ -130,7 +130,7 @@ export default function About() {
 
             {/* Social Media */}
             <div className="reveal mt-8">
-              <h3 className="font-grotesk font-semibold text-gray-900 dark:text-white mb-4">Temukan Saya di</h3>
+              <h3 className="font-grotesk font-semibold text-gray-900 dark:text-white mb-4">Find Me On</h3>
               <div className="flex flex-wrap gap-3">
                 {socials.map((social) => (
                   <a

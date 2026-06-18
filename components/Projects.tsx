@@ -20,45 +20,45 @@ const projects: ProjectItem[] = [
   {
     "title": "E-Commerce Platform",
     "category": "Full Stack",
-    "description": "Platform belanja online dengan fitur manajemen produk, keranjang belanja, pembayaran terintegrasi, dan dashboard admin yang komprehensif.",
-    "tech": ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-    "github": "https://github.com/rolanok",
+    "description": "Online shop with product management, shopping cart, integrated payments, and a comprehensive admin dashboard.",
+    "tech": ["Laravel", "MySQL", "Midtrans", "Tailwind CSS"],
+    "github": "https://github.com/olanfn",
     "demo": "https://demo.example.com",
     "gradient": "from-purple-500 to-indigo-600",
     "icon": "🛒",
     "featured": true
   },
   {
-    "title": "IT Asset Management System",
-    "category": "IT Tools",
-    "description": "Sistem manajemen aset IT perusahaan untuk melacak perangkat keras, lisensi software, dan jadwal maintenance dengan laporan otomatis.",
-    "tech": ["React", "Laravel", "MySQL", "Chart.js"],
-    "github": "https://github.com/rolanok",
+    "title": "Axie Infinity Game NFT Monitoring System",
+    "category": "Web App",
+    "description": "Dashboard monitoring game Axie Infinity untuk kebutuhan manajemen aset game NFT dan melacak performa game.",
+    "tech": ["Codeigniter", "MySQL", "Ranking point system", "Axie Infinity API"],
+    "github": "https://github.com/olanfn",
     "demo": null,
     "gradient": "from-cyan-500 to-blue-600",
     "icon": "🖥️",
     "featured": true
   },
   {
+    "title": "Human Resource Information System (HRIS) Recruitment Tracking System",
+    "category": "Full Stack",
+    "description": "Application Recruitment Tracking System for human resource management and employee performance tracking.",
+    "tech": ["Laravel", "MySQL", "Jquery", "Ajax"],
+    "github": "https://github.com/olanfn",
+    "demo": "https://demo.example.com",
+    "gradient": "from-green-500 to-teal-600",
+    "icon": "🎫",
+    "featured": true
+  },
+  {
     "title": "Company Profile Website",
     "category": "Web App",
     "description": "Website company profile modern dengan animasi scroll, galeri portofolio, dan formulir kontak yang terhubung ke email perusahaan.",
-    "tech": ["Next.js", "Tailwind CSS", "Framer Motion", "Nodemailer"],
-    "github": "https://github.com/rolanok",
+    "tech": ["WordPress", "PHP", "Custom Plugin"],
+    "github": "https://github.com/olanfn",
     "demo": "https://demo.example.com",
     "gradient": "from-orange-500 to-pink-600",
     "icon": "🏢",
-    "featured": false
-  },
-  {
-    "title": "Help Desk Ticketing System",
-    "category": "IT Tools",
-    "description": "Sistem tiket help desk untuk tim IT support dengan prioritas otomatis, notifikasi real-time, dan laporan SLA.",
-    "tech": ["Vue.js", "Express.js", "MongoDB", "Socket.io"],
-    "github": "https://github.com/rolanok",
-    "demo": null,
-    "gradient": "from-green-500 to-teal-600",
-    "icon": "🎫",
     "featured": false
   },
   {
@@ -130,11 +130,10 @@ export default function Projects() {
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeFilter === cat
-                  ? 'bg-gray-900 text-white dark:bg-white dark:text-gray-900 shadow-md'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-[#1A1A2E] dark:text-gray-400 dark:hover:bg-[#2A2A4A]'
-              }`}
+              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeFilter === cat
+                ? 'bg-gray-900 text-white dark:bg-white dark:text-gray-900 shadow-md'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-[#1A1A2E] dark:text-gray-400 dark:hover:bg-[#2A2A4A]'
+                }`}
             >
               {cat}
             </button>
