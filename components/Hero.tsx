@@ -181,8 +181,9 @@ export default function Hero() {
                   src="/photos/pp.jpeg"
                   alt="Rolan Oktafian"
                   fill
+                  // style={{ objectPosition: 'top -30%' }}
                   sizes="(max-width: 768px) 256px, 320px"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105 object-bottom"
                   priority
                 />
               </div>
