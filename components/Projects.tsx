@@ -47,7 +47,7 @@ const projects: ProjectItem[] = [
     "github": "https://github.com/olanfn",
     "demo": "https://demo.example.com",
     "gradient": "from-green-500 to-teal-600",
-    "icon": "🎫",
+    "icon": "💼",
     "featured": true
   },
   {
